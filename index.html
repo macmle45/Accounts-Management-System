@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AMS</title>
+    <link rel="shortcut icon" href="img/bar-chart.png">
+    <link rel="stylesheet" href="style.css"/>
+    <script type="application/javascript" src="script.js"></script>
+    <meta charset="utf-8"/>
+</head>
+<body onload="init()">
+    <div id="main_titl">Accounts Management System</div>
+    <div id="btn2" class="subm" onclick="newAccnt()">New Account</div>
+    <div id="btn3" class="subm" onclick="showTable()">Table of Accounts</div>
+    <div id="btn5" class="subm">Technology</div>
+    <div id="btn6" class="subm">What's that?</div>
+    <img src="img/creat_accnt.svg" id="strt_lg" class="strt_lg_pos_show" alt="logo"/>
+    <div id="load_bar"></div>
+    
+    <div id="creat_user" class="creat_user_hide" onkeyup="check_cnt()">
+        <p id="title">New Account <img src="img/creat_accnt2.svg" id="logo"/> </p>
+        <p id="p0" class="p_err">Name <input type="input" id="nm" class="inp"/></p>
+        <p id="p1" class="p_err">Lastname <input type="input" id="lm" class="inp"/></p>
+        <p id="p2" class="p_err">Nick <input type="input" id="nck" class="inp"/></p>
+        <p id="p3" class="p_err">Email <input type="input" id="ml" class="inp"/></p>
+        <p id="p4" class="p_err">Password <input type="password" id="passwd" class="inp"/></p>
+        <p id="p5" class="p_err">Photo <input type="file" id="img" accept="image/*" class="inp_img" name="addr"/></p>
+        <div id="btn1" class="subm" onclick="createAccnt()">Create</div>
+        <div id="btn4" class="subm" onclick="cncl()">Cancel</div>
+    </div>
+    
+    <table id="table_of_users" class="table_hide">
+        <tr>
+            <td id="td_titl0" class="look">ID</td>
+            <td id="td_titl1" class="look">Photo</td>
+            <td id="td_titl2" class="look">Name</td>
+            <td id="td_titl3" class="look">Lastname</td>
+            <td id="td_titl4" class="look">Nick</td>
+            <td id="td_titl5" class="look">Email</td>
+            <td id="td_titl6" class="look">Password</td>
+        </tr>
+    </table>
+    <img src="img/back-arrow-circular-symbol.svg" id="bck_arrw" class="arrw_hide" alt="back" onclick="hideTable()"/>
+    
+    <div id="t0" class="t0_col"></div>
+    <div id="t1" class="t1_col"></div>
+    <div id="t2" class="t2_col"></div>
+    <div id="t3" class="t3_col"></div>
+</body>
+</html>
